@@ -81,5 +81,6 @@ ___
 
 * [**Code Challenge 01 - array_reverse**](code_challenges/array_reverse/README.md)
 * [**Code Challenge 02 - array_insert_shift**](code_challenges/array_insert_shift/README.md)
+* [**Code Challenge 03 - array_binary_search**](code_challenges/array_binary_search/README.md)
 
 
