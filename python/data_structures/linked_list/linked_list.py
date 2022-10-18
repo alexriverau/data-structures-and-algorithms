@@ -43,3 +43,10 @@ class Node:
     def __init__(self, value, next=None):
         self.value = value
         self.next = next
+
+
+# create Target Error class
+class TargetError:
+
+    def __init__(self, value):
+        self.value = value
