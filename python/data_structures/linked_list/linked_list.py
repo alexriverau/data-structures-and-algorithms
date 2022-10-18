@@ -32,7 +32,7 @@ class LinkedList:
             string += f'{{ {current.value} }} -> '
             print(string)
             current = current.next
-        string += 'NULL'
+        string += 'None'
         print(string)
         return string
 
