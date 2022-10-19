@@ -18,5 +18,4 @@ ___
 **Contributors:**
 * Marni Hager
 * Sergii Otryshko
-
-
+*
