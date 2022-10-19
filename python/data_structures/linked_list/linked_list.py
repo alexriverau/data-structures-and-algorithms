@@ -32,7 +32,7 @@ class LinkedList:
             string += f'{{ {current.value} }} -> '
             print(string)
             current = current.next
-        string += 'NULL'
+        string += 'None'
         print(string)
         return string
 
@@ -43,3 +43,10 @@ class Node:
     def __init__(self, value, next=None):
         self.value = value
         self.next = next
+
+
+# create Target Error class
+class TargetError:
+
+    def __init__(self, value):
+        self.value = value
