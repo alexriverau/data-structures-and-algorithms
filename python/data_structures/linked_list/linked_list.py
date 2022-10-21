@@ -36,6 +36,29 @@ class LinkedList:
         print(string)
         return string
 
+    # kth from end method
+    def kth_from_end(self, k):
+        length = 0
+        current = self.head
+
+        while current is not None:
+            length += 1
+            current = current.next
+
+        target = length-k
+
+        if k >= length:
+            raise Exception
+        if target == 0:
+            return self.head.value
+
+        current = self.head
+
+        for i in range(target - 1):
+            current = current.next
+
+        return current.value
+
 
 # creates Node class
 class Node:
@@ -47,6 +70,4 @@ class Node:
 
 # create Target Error class
 class TargetError:
-
-    def __init__(self, value):
-        self.value = value
+    pass
