@@ -84,4 +84,5 @@ ___
 * [**Code Challenge 03 - array_binary_search**](code_challenges/array_binary_search/README.md)
 * [**Code Challenge 06 - linked_list_insertions**](code_challenges/linked_list_insertions/README.md)
 * [**Code Challenge 07 - linked_list_kth**](code_challenges/linked_list_kth/README.md)
+* [**Code Challenge 08 - linked_list_zip**](code_challenges/linked_list_zip/README.md)
 
