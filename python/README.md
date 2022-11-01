@@ -86,4 +86,4 @@ ___
 * [**Code Challenge 06 - linked_list_insertions**](code_challenges/linked_list_insertions/README.md)
 * [**Code Challenge 07 - linked_list_kth**](code_challenges/linked_list_kth/README.md)
 * [**Code Challenge 08 - linked_list_zip**](code_challenges/linked_list_zip/README.md)
-* [**Code Challenge 10 - stack_and_queue**](data_structures/stack_and_queue/README.md)
+* [**Code Challenge 10 - stack_and_queue**](docs/stack_and_queue/README.md)
