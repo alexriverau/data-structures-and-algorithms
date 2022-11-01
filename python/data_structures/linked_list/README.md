@@ -1,6 +1,6 @@
 # Singly Linked List
 
-  Singly Linked List implementation and testing.
+Singly Linked List implementation and testing.
 
 ## Challenge
 
