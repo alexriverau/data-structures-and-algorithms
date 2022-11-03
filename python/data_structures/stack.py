@@ -1,31 +1,59 @@
+from data_structures.invalid_operation_error import InvalidOperationError
+
+
 # creates Stack class
 class Stack:
-    """
-    Put docstring here
-    """
 
     # instantiates Stack
     def __init__(self, top=None):
         self.top = top
 
-    # push method
+    ''''push method:
+    - adds a new node to the top of the stack with an O(1) time performance'''
     def push(self, value):
-        pass
+        node = Node(value)
 
-    # pop method
+        if self.top is None:
+            self.top = node
+        else:
+            node.next = self.top
+            self.top = node
+
+    '''pop method:
+    - returns value of the node from the top of the stack
+    - removes the node from the top of the stack
+    - raises exception when called on empty stack'''
     def pop(self):
-        pass
 
-    # peek method
+        if self.top is None:
+            raise InvalidOperationError('Method not allowed on empty collection')
+
+        temp = self.top
+        self.top = self.top.next
+        temp.next = None
+        return temp.value
+
+    '''peek method:
+    - returns value of the node from he top of the stack
+    - raises exception when called on empty stack'''
     def peek(self):
-        pass
 
-    # is_empty method
+        if self.top is None:
+            raise InvalidOperationError('Method not allowed on empty collection')
+        else:
+            return self.top.value
+
+    '''is_empty method:
+    - returns a boolean indicating whether or not the stack is empty'''
     def is_empty(self):
-        pass
+
+        if self.top is None:
+            return True
+        else:
+            return False
 
 
-# create Node class
+# creates Node class
 class Node:
 
     def __init__(self, value, next=None):
