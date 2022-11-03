@@ -45,6 +45,14 @@ Stack and Queue implementation using a Linked List as the underlying data storag
 
 ## Approach & Efficiency
 
+* [Stack Code](/Users/Alex/projects/data-structures-and-algorithms/python/data_structures/stack.py)
+* [Queue Code](/Users/Alex/projects/data-structures-and-algorithms/python/data_structures/queue.py)
 
 ## Testing
 
+* [Stack Tests](/Users/Alex/projects/data-structures-and-algorithms/python/tests/data_structures/test_stack.py)
+* [Queue Tests](/Users/Alex/projects/data-structures-and-algorithms/python/tests/data_structures/test_queue.py)
+
+## Contributor
+
+* Monika Davies
