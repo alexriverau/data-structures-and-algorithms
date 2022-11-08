@@ -87,3 +87,4 @@ ___
 * [**Code Challenge 07 - linked_list_kth**](code_challenges/linked_list_kth/README.md)
 * [**Code Challenge 08 - linked_list_zip**](code_challenges/linked_list_zip/README.md)
 * [**Code Challenge 10 - stack_and_queue**](docs/stack_and_queue/README.md)
+* [**Code Challenge 11 - stack_queue_pseudo**](docs/stack_queue_pseudo/README.md)
