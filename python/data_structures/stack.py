@@ -13,7 +13,7 @@ class Stack:
     def push(self, value):
         node = Node(value)
 
-        if self.top is None:
+        if self.is_empty():
             self.top = node
         else:
             node.next = self.top
@@ -25,7 +25,7 @@ class Stack:
     - raises exception when called on empty stack'''
     def pop(self):
 
-        if self.top is None:
+        if self.is_empty():
             raise InvalidOperationError('Method not allowed on empty collection')
 
         temp = self.top
@@ -38,7 +38,7 @@ class Stack:
     - raises exception when called on empty stack'''
     def peek(self):
 
-        if self.top is None:
+        if self.is_empty():
             raise InvalidOperationError('Method not allowed on empty collection')
         else:
             return self.top.value

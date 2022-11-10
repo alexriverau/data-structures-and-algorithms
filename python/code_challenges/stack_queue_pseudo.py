@@ -8,15 +8,14 @@ class PseudoQueue:
         self.temp = Stack()
 
     def enqueue(self, value):
-        while self.temp is not None:
+        while not self.temp.is_empty():
             self.stack.push(self.temp.pop())
         self.stack.push(value)
+        return self.stack
 
     def dequeue(self):
-        if self.stack is None:
-            return None
+        if self.stack is not None:
 
-        while self.stack is not None:
-            self.temp.push(self.stack.pop())
-
+            while not self.stack.is_empty():
+                self.temp.push(self.stack.pop())
         return self.temp.pop()
