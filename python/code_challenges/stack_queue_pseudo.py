@@ -11,7 +11,6 @@ class PseudoQueue:
         while not self.temp.is_empty():
             self.stack.push(self.temp.pop())
         self.stack.push(value)
-        return self.stack
 
     def dequeue(self):
         if self.stack is not None:
