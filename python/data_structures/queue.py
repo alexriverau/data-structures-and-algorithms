@@ -5,19 +5,19 @@ from data_structures.invalid_operation_error import InvalidOperationError
 class Queue:
 
     # instantiates Queue
-    def __init__(self, front=None):
+    def __init__(self, front=None, rear=None):
         self.front = front
-        self.rear = None
+        self.rear = rear
 
     ''' enqueue method:
     - adds a new node to the back of the queue with an O(1) time performance'''
     def enqueue(self, value):
         node = Node(value)
 
-        if self.front is None:
+        if self.is_empty():
             self.front = node
             self.rear = node
-        elif self.rear:
+        else:
             self.rear.next = node
             self.rear = node
 
@@ -27,7 +27,7 @@ class Queue:
     - raises exception when called on empty queue'''
     def dequeue(self):
 
-        if self.front is None:
+        if self.is_empty():
             raise InvalidOperationError('Method not allowed on empty collection')
 
         temp = self.front
@@ -40,7 +40,7 @@ class Queue:
     - raise exception when called on empty queue'''
     def peek(self):
 
-        if self.front is None:
+        if self.is_empty():
             raise InvalidOperationError('Method not allowed on empty collection')
         else:
             return self.front.value
@@ -49,10 +49,10 @@ class Queue:
     - returns boolean indicating whether or not the queue is empty'''
     def is_empty(self):
 
-        if self.front is None:
-            return True
-        else:
+        if self.front:
             return False
+        else:
+            return True
 
 
 # creates a Node class
