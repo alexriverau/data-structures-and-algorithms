@@ -88,3 +88,4 @@ ___
 * [**Code Challenge 08 - linked_list_zip**](code_challenges/linked_list_zip/README.md)
 * [**Code Challenge 10 - stack_and_queue**](docs/stack_and_queue/README.md)
 * [**Code Challenge 11 - stack_queue_pseudo**](docs/stack_queue_pseudo/README.md)
+* [**Code Challenge 12 - stack_queue_animal_shelter**](docs/stack_queue_animal_shelter/README.md)
