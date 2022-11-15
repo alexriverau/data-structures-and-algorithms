@@ -1,4 +1,4 @@
-# Implement a Queue using two Stacks.
+# Implement a Queue using two Stacks
 
 * Create a new class called PseudoQueue
 * Methods:
@@ -12,7 +12,7 @@
 
 ## Whiteboard Process
 
-![linked_list_zip](stack_queue_pseudo.png)
+![stack_queue_pseudo](stack_queue_pseudo.png)
 
 ## Approach & Efficiency
 
