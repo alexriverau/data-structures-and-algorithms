@@ -90,3 +90,4 @@ ___
 * [**Code Challenge 11 - stack_queue_pseudo**](docs/stack_queue_pseudo/README.md)
 * [**Code Challenge 12 - stack_queue_animal_shelter**](docs/stack_queue_animal_shelter/README.md)
 * [**Code Challenge 13 - stack_queue_brackets**](docs/stack_queue_brackets/README.md)
+* [**Code Challenge 15 - trees**](docs/trees/README.md)
