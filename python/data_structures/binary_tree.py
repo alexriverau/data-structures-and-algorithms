@@ -82,7 +82,7 @@ class BinaryTree:
 
     def find_maximum_value(self):
         lst_values = self.pre_order()
-        max_val = 0
+        max_val = lst_values[0]
 
         if not self.root:
             return 'binary tree empty'
