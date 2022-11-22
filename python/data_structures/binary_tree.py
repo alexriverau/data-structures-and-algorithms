@@ -80,15 +80,15 @@ class BinaryTree:
         walk(self.root, values)
         return values
 
-    def find_maximum_value(self):
-        if not self.root:
-            return 'binary tree empty'
-
-        lst_values = self.in_order()
-        max_val = 0
-
-        # iterate over pre_order list
-        for val in lst_values:
-            if val > max_val:
-                max_val = val
-        return max_val
+    # def find_maximum_value(self):
+    #     if not self.root:
+    #         return 'binary tree empty'
+    #
+    #     lst_values = self.pre_order()
+    #     max_val = 0
+    #
+    #     # iterate over pre_order list
+    #     for val in lst_values:
+    #         if val > max_val:
+    #             max_val = val
+    #     return max_val
