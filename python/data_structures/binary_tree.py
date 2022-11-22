@@ -84,7 +84,7 @@ class BinaryTree:
         if not self.root:
             return 'binary tree empty'
 
-        lst_values = self.pre_order()
+        lst_values = self.in_order()
         max_val = 0
 
         # iterate over pre_order list
