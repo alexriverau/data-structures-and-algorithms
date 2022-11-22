@@ -1,4 +1,4 @@
-from data_structures.binary_tree import BinaryTree
+from data_structures.binary_tree import BinaryTree, Node
 
 
 class BinarySearchTree(BinaryTree):
@@ -16,8 +16,49 @@ class BinarySearchTree(BinaryTree):
     def __init__(self, root=None):
         self.root = root
 
-    def add(self):
-        pass
+    def add(self, value):
+        node = Node(value)
 
-    def contains(self):
-        pass
+        # check if tree is empty
+        if not self.root:
+            self.root = node
+            return
+
+        root = self.root
+
+        # traverse over tree
+        while root:
+            # check values left side and adds new node
+            if value < root.value:
+                if root.left:
+                    root = root.left
+                else:
+                    root.left = node
+                    return
+
+            # check values right side and adds new node
+            if value > root.value:
+                if root.right:
+                    root = root.right
+                else:
+                    root.right = node
+                    return
+
+    def contains(self, value):
+        root = self.root
+
+        # traverse over tree
+        while root:
+            # check if value is the same as the root
+            if value == root.value:
+                return True
+
+            # check values left side
+            if value < root.value:
+                root = root.left
+
+            # check values right side
+            if value > root.value:
+                root = root.right
+
+        return False
