@@ -87,6 +87,7 @@ class BinaryTree:
         lst_values = self.pre_order()
         max_val = 0
 
+        # iterate over pre_order list
         for val in lst_values:
             if val > max_val:
                 max_val = val
