@@ -92,3 +92,4 @@ ___
 * [**Code Challenge 13 - stack_queue_brackets**](docs/stack_queue_brackets/README.md)
 * [**Code Challenge 15 - trees**](docs/trees/README.md)
 * [**Code Challenge 16 - tree_max**](docs/trees/README.md)
+* [**Code Challenge 17 - tree_breadth_first**](docs/tree_breadth_first/README.md)
