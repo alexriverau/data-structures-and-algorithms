@@ -85,11 +85,9 @@ class BinaryTree:
             return 'binary tree empty'
 
         lst_values = self.pre_order()
-        max_val = None
+        max_val = 0
 
         for val in lst_values:
-            if type(val) is int or type(val) is float:
-                if max_val is None or val > max_val:
-                    max_val = val
-
+            if val > max_val:
+                max_val = val
         return max_val
