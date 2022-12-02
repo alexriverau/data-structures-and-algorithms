@@ -11,7 +11,7 @@
 ## Approach & Efficiency
 
 **BigO**
-* Time: O(n because we are traversing a tree
+* Time: O(n) because we are traversing a tree
 * Space: O(n) because we are returning a list
 
 ## Solution
