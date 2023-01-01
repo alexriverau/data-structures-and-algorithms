@@ -53,3 +53,8 @@ Insertion sort is not the most efficient algorithm for sorting large lists, but 
 
 * **Space Complexity:**
   * O(1) The amount of memory used doesn't depend on the size of the input list. It sorts the list in place without creating any additional data structures.
+
+### Tests
+
+* [tests](test_insertion.py)
+* **run:** pytest insertion/test_insertion.py
