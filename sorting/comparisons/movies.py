@@ -146,7 +146,7 @@ def merge_title(left, right, lst_movies):
 
 # function that returns a list of movies sorted by title
 def sort_movies_by_title(lst_movies):
-    titles = []
+    movie_titles = []
     for movie in merge_sort_title(lst_movies):
-        titles.append(movie['title'])
-    return titles
+        movie_titles.append(movie['title'])
+    return movie_titles
