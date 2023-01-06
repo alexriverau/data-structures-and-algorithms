@@ -52,29 +52,101 @@ movies = [
 ]
 
 
+# implementing merge sort to sort movies by year
+def merge_sort_year(lst_movies):
+    n = len(lst_movies)
+
+    if n > 1:
+        mid = n // 2
+        left = lst_movies[:mid]
+        right = lst_movies[mid:]
+
+        merge_sort_year(left)
+        merge_sort_year(right)
+        merge_year(left, right, lst_movies)
+
+    return lst_movies
+
+
+def merge_year(left, right, lst_movies):
+    i = 0
+    j = 0
+    k = 0
+
+    while i < len(left) and j < len(right):
+        if left[i]['year'] < right[j]['year']:
+            lst_movies[k] = right[j]
+            j = j + 1
+        else:
+            lst_movies[k] = left[i]
+            i = i + 1
+
+        k = k + 1
+
+    if i == len(left):
+        for idx in range(j, len(right)):
+            lst_movies[k] = right[idx]
+            k = k + 1
+
+    else:
+        for idx in range(i, len(left)):
+            lst_movies[k] = left[idx]
+            k = k + 1
+
+
+# function that returns a list of movies sorted by year
 def sort_movies_by_year(lst_movies):
+    movies_by_year = []
+    for movie in merge_sort_year(lst_movies):
+        movies_by_year.append(movie['title'])
+    return movies_by_year
 
-    for i in range(len(lst_movies)):
 
-        for j in range(i + 1, len(lst_movies)):
-            if lst_movies[i].year < lst_movies[j].year:
-                lst_movies[i], lst_movies[j] = lst_movies[j], lst_movies[i]
+# implementing merge sort to sort movies by title
+def merge_sort_title(lst_movies):
+    n = len(lst_movies)
+
+    if n > 1:
+        mid = n // 2
+        left = lst_movies[:mid]
+        right = lst_movies[mid:]
+
+        merge_sort_title(left)
+        merge_sort_title(right)
+        merge_title(left, right, lst_movies)
 
     return lst_movies
 
 
+def merge_title(left, right, lst_movies):
+    i = 0
+    j = 0
+    k = 0
+
+    while i < len(left) and j < len(right):
+        if left[i]['title'] < right[j]['title']:
+            lst_movies[k] = right[j]
+            j = j + 1
+        else:
+            lst_movies[k] = left[i]
+            i = i + 1
+
+        k = k + 1
+
+    if i == len(left):
+        for idx in range(j, len(right)):
+            lst_movies[k] = right[idx]
+            k = k + 1
+
+    else:
+        for idx in range(i, len(left)):
+            lst_movies[k] = left[idx]
+            k = k + 1
+
+
+# function that returns a list of movies sorted by title
 def sort_movies_by_title(lst_movies):
-
-    def get_title(movie):
-        title = movie.title
-        if title.startswith(('A ', 'An ', 'The ')):
-            title = title[title.index(' ') + 1:]
-        return title
-
-    for i in range(len(lst_movies)):
-
-        for j in range(i + 1, len(lst_movies)):
-            if get_title(lst_movies[i]) > get_title(lst_movies[j]):
-                lst_movies[i], lst_movies[j] = lst_movies[j], lst_movies[i]
-
-    return lst_movies
+    titles = []
+    for movie in merge_sort_title(lst_movies):
+        titles.append(movie['title'])
+    return titles
