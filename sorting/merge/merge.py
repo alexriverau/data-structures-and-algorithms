@@ -7,7 +7,7 @@ def merge_sort(lst):
         right = lst[mid:]
         merge_sort(left)
         merge_sort(right)
-        merge_sort(left, right, lst)
+        merge(left, right, lst)
 
     return lst
 

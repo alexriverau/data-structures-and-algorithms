@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82818142-9371-46b4-b7cb-853dec9ee170" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sorting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sorting.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/merge/README.md" afterDir="false" />
+    <list default="true" id="7e0e0951-6cc1-470a-a75e-0c9e3a251496" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/comparisons/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparisons/movies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge/merge.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +19,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JkEQVvPBKRuzldqrrGTRp7wxIA" />
+  <component name="ProjectId" id="2JwTjSt06bo25fBmflsonbsVVTe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,20 +33,18 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82818142-9371-46b4-b7cb-853dec9ee170" name="Changes" comment="" />
-      <created>1672613671641</created>
+      <changelist id="7e0e0951-6cc1-470a-a75e-0c9e3a251496" name="Changes" comment="" />
+      <created>1672988286108</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1672613671641</updated>
-      <workItem from="1672613673530" duration="2126000" />
+      <updated>1672988286108</updated>
+      <workItem from="1672988288745" duration="4994000" />
     </task>
     <servers />
   </component>
