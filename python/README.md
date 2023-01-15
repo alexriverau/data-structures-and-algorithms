@@ -94,3 +94,4 @@ ___
 * [**Code Challenge 16 - tree_max**](docs/trees/README.md)
 * [**Code Challenge 17 - tree_breadth_first**](docs/tree_breadth_first/README.md)
 * [**Code Challenge 18 - tree_fizz_buzz**](docs/tree_fizz_buzz/README.md)
+* [**Code Challenge 30 - hashtable**](docs/hashtable/README.md)
