@@ -68,9 +68,9 @@ class Hashtable:
 
         sum_hash = 0
         for char in key:
-            sum_hash += ord(char) # ord() method returns ascii/unicode value
+            sum_hash += ord(char)  # ord() method returns ascii/unicode value
 
-        primed = sum_hash * 599 # multiplies by a prime number
+        primed = sum_hash * 599  # multiplies by a prime number
         index = primed % self.size
         return index
 
