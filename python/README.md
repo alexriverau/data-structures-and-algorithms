@@ -96,3 +96,4 @@ ___
 * [**Code Challenge 18 - tree_fizz_buzz**](docs/tree_fizz_buzz/README.md)
 * [**Code Challenge 30 - hashtable**](docs/hashtable/README.md)
 * [**Code Challenge 31 - hashtable_repeated_word**](docs/hashtable_repeated_word/README.md)
+* [**Code Challenge 32 - tree_intersection**](docs/tree_intersection/README.md)
