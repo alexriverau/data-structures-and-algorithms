@@ -59,6 +59,53 @@ class LinkedList:
 
         return current.value
 
+    def add(self, value):
+        node = Node(value)
+
+        if self.head is None:
+            self.head = node
+            return
+
+        current = self.head
+        while current.next is not None:
+            current = current.next
+
+        current.next = node
+
+    def reverse(self):
+        if not self.head:
+            return
+
+        previous = None
+        current = self.head
+
+        while current:
+            next_node = current.next
+            current.next = previous
+            previous = current
+            current = next_node
+        self.head = previous
+
+    def ll_add_one(self):
+        self.reverse()
+        current = self.head
+
+        while current:
+            if current.value == 9 and current.next:
+                current.value = 0
+                current = current.next
+
+            elif current.value < 9:
+                current.value += 1
+                break
+
+            else:
+                current.value = 0
+                node = Node(1)
+                current.next = node
+                break
+        self.reverse()
+
 
 # creates Node class
 class Node:
