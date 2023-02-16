@@ -1,4 +1,4 @@
-from data_structures.linked_list import LinkedList
+from data_structures.linked_list import LinkedList, Node
 
 
 def test_exists():
@@ -72,3 +72,60 @@ def test_includes_false():
     linked_list.insert("banana")
 
     assert not linked_list.includes("cucumber")
+
+
+# @pytest.mark.skip("TODO")
+def test_reverse():
+    linked_list = LinkedList()
+    linked_list.add(1)
+    linked_list.add(2)
+    linked_list.add(3)
+
+    linked_list.reverse()
+
+    assert linked_list.head.value == 3
+    assert linked_list.head.next.value == 2
+    assert linked_list.head.next.next.value == 1
+
+    linked_list.reverse()
+
+    assert linked_list.head.value == 1
+    assert linked_list.head.next.value == 2
+    assert linked_list.head.next.next.value == 3
+
+
+# @pytest.mark.skip("TODO")
+def test_ll_add_one():
+    linked_list = LinkedList()
+    linked_list.add(1)
+    linked_list.add(2)
+    linked_list.add(3)
+
+    linked_list.ll_add_one()
+
+    assert linked_list.head.value == 1
+    assert linked_list.head.next.value == 2
+    assert linked_list.head.next.next.value == 4
+
+    linked_list = LinkedList()
+    linked_list.add(4)
+    linked_list.add(9)
+    linked_list.add(9)
+
+    linked_list.ll_add_one()
+
+    assert linked_list.head.value == 5
+    assert linked_list.head.next.value == 0
+    assert linked_list.head.next.next.value == 0
+
+    linked_list = LinkedList()
+    linked_list.add(9)
+    linked_list.add(9)
+    linked_list.add(9)
+
+    linked_list.ll_add_one()
+
+    assert linked_list.head.value == 1
+    assert linked_list.head.next.value == 0
+    assert linked_list.head.next.next.value == 0
+    assert linked_list.head.next.next.next.value == 0
